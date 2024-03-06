@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image:url(car1.jpg);
+  }
+  
+  header {
+    background-color: #bb28cc;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+  }
+  
+  label {
+    margin-right: 1em;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-right: 1em;
+    width: 15em;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(209, 230, 173);
+  }
+  .search-results-table th,
+.search-results-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-results-table th {
+    background-color: #f2f2f2;
+}
+  
+   

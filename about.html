@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+  padding: 16px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(to bottom, #44A0C3, #1B5E79);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #FFC800;
+  animation: pulse 1s infinite;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  animation: slide-in 1s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    color: red;
+    
+  }
+  50% {
+    color: #FFF;
+  }
+  100% {
+    color: #FFC800;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #2977d8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+html, body {
+  margin: 8px
+}
+
+</style>
+</head>
+<body>
+
+<div class="about-section">
+    <h1>About Us </h1>
+    <p>
+        Based in Sydney, Australia, our company's name is Car Selling Website. You can reach us at our telephone number: 123456 or via email at carselling@gmail.com.
+      </p>
+    <p>
+      We are a team of experienced professionals who specialize in car selling. Our mission is to help businesses grow by generating leads and closing sales through our expert car selling services.
+    </p>
+    
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="sajan1.png"  style="width:100%">
+      <div class="container">
+        <h2>Sajan Random</h2>
+        <p class="title">CEO & Founder</p>
+        <p> With over 20 years of experience in the automotive industry, John is a true expert in the field. He started his career as a mechanic, learning the ins and outs of vehicle maintenance and repair. After a few years, he transitioned into sales and quickly climbed the ranks to become a top-performing sales manager.</p>
+        <p>sajan@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="krishan1.png" style="width:100%">
+      <div class="container">
+        <h2>Krishan Aryal </h2>
+        <p class="title"> Director</p>
+        <p>Our Director Krishan , has been a part of the automotive industry for over 10 years. With his vast experience and knowledge, he has played a pivotal role in shaping our company's vision and guiding it towards success. </p>
+        <p>krishan@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="bishal.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Bishal Michael</h2>
+        <p class="title">Designer</p>
+        <p>Our designers Bishal tirelessly work to ensure that every detail of our cars is carefully considered, from the sleek exterior lines to the comfortable and intuitive interior features. </p>
+        <p>bishal@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
